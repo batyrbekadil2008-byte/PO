@@ -10,7 +10,7 @@ fwrite($file,
 fclose($file);
 
 echo "<h2>Сообщение отправлено!</h2>";
-echo "<a href='Web.html'>Вернуться назад</a>";
+echo "<a href='index.html'>Вернуться назад</a>";
 
 
 
