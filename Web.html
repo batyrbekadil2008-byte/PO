@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/logoB.png" type="image/png">
+<title>CinemaTime</title>
+</head>
+
+<body>
+
+<header>
+<nav class="menu">
+<h2 class="logo"> CinemaTime</h2>
+<div class="burger" id="burger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div id="navLinks">
+<a href="Web.html">Главная</a>
+<a href="movies.html">Фильмы</a>
+<a href="payment-history.html">История платежей</a>
+<a href="contact.html">Контакты</a>
+<a href="about.html">О нас</a>
+</div>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Смотри лучшие фильмы первым</h1>
+<p>Новинки кино • Онлайн бронирование • Лучшие залы</p><br>
+<a class="main-btn" href="movies.html">Смотреть фильмы</a>
+</div>
+
+<div class="image-gallery">
+    <h2>Хиты продаж</h2>
+<div class="gallery-item">
+<img src="https://i.pinimg.com/736x/91/1a/2d/911a2db55ff3a1faa44a7e766b9a1b3e.jpg" alt="The Batman">
+<div class="overlay">
+<h3>The Batman</h3>
+<a href="place.html?movie=The Batman" class="detail-btn">Подробнее</a>
+</div>
+</div>
+<div class="gallery-item">
+<img src="img/Maksim.jpeg" alt="Inception">
+<div class="overlay">
+<h3>Inception</h3>
+<a href="place.html?movie=Inception" class="detail-btn">Подробнее</a>
+</div>
+</div>
+<div class="gallery-item">
+<img src="https://avatars.mds.yandex.net/i?id=07d421f18b5e88f029bc5b2492965694_l-4080866-images-thumbs&n=13" alt="Interstellar">
+<div class="overlay">
+<h3>Interstellar</h3>
+<a href="place.html?movie=Interstellar" class="detail-btn">Подробнее</a>
+</div>
+</div>
+</div>
+
+
+<footer>
+<div class="footer-content">
+<div class="contact-info">
+<p>Телефон: +7 (708) 219-78-90</p>
+<p>Адрес: г. Кокшетау, ул. Гагарина 19</p>
+</div>
+<p>© 2026 CinemaTime</p>
+<div class="social-links">
+<a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a>
+<a href="https://twitter.com/" target="_blank">Twitter</a>
+<a href="https://instagram.com/" target="_blank">Instagram</a>
+</div>
+</footer>
+
+<script src="java/nav.js"></script>
+<script>
+document.querySelector('a[href="Web.html"]').classList.add('active');
+</script>
+
+</body>
+</html>
+

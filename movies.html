@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/logoB.png" type="image/png">
+<title>CinemaTime — Фильмы</title>
+</head>
+
+<body>
+
+<header>
+<nav class="menu">
+<h2 class="logo">CinemaTime</h2>
+<div class="burger" id="burger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<div id="navLinks">
+<a href="Web.html">Главная</a>
+<a href="movies.html">Фильмы</a>
+<a href="payment-history.html">История платежей</a>
+<a href="contact.html">Контакты</a>
+<a href="about.html">О нас</a>
+</div>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Сейчас в сеансе</h1>
+<p>Выберите фильм и купите билет онлайн</p>
+</div>
+
+<a class="Sale billboard" href="place.html?movie=The Batman">
+<div class="sale-left">
+<h2>Ночные сеансы</h2>
+<p>После 22:00 действует скидка на все билеты. Смотрите лучшие фильмы ночью.</p>
+</div>
+
+<div class="sale-right">
+<span class="percent">20%</span>
+<span class="label">СКИДКА</span>
+<span class="sale-action">Перейти к билету</span>
+</div>
+</a>
+
+<div class="movie-search">
+
+<input type="text" id="searchInput" placeholder="Поиск фильмов...">
+
+<div class="genres">
+<button class="genre-btn active" onclick="filterGenre('all', this)">Все</button>
+<button class="genre-btn" onclick="filterGenre('action', this)">Боевик</button>
+<button class="genre-btn" onclick="filterGenre('drama', this)">Драма</button>
+<button class="genre-btn" onclick="filterGenre('sci-fi', this)">Фантастика</button>
+<button class="genre-btn" onclick="filterGenre('comedy', this)">Комедия</button>
+</div>
+
+
+</div>
+
+<section class="movies-section">
+<div class="movie-grid">
+<div class="movie-item">
+<img src="https://cdn.listelist.com/wp-content/uploads/2022/12/16459875620726-1536x864.jpg" alt="The Batman">
+<div class="movie-info">
+<h3 class="movie-title" data-genre="drama">The Batman</h3>
+<p>2022 • Драма, Триллер • 176 мин</p>
+<p>Бэтмен против Загадочника в мрачном Готэме.</p>
+<button class="buyTicket" data-movie="The Batman">Купить билет</button>
+</div>
+</div>
+<div class="movie-item">
+<img src="img/Adil.jpeg" alt="Avatar">
+<div class="movie-info">
+<h3 class="movie-title" data-genre="sci-fi">Avatar</h3>
+<p>2009 • Фантастика, Приключения • 162 мин</p>
+<p>Человек на планете Пандора борется за выживание.</p>
+<button class="buyTicket" data-movie="Avatar">Купить билет</button>
+</div>
+</div>
+<div class="movie-item">
+<img src="img/Sultan.jpeg" alt="Dune">
+<div class="movie-info">
+<h3 class="movie-title" data-genre="comedy">Dune</h3>
+<p>2021 • Фантастика, Драма • 155 мин</p>
+<p>Эпическая сага о пустынной планете Арракис.</p>
+<button class="buyTicket" data-movie="Dune">Купить билет</button>
+</div>
+</div>
+<div class="movie-item">
+<img src="img/Maksim.jpeg" alt="Inception">
+<div class="movie-info">
+<h3 class="movie-title" data-genre="sci-fi">Inception</h3>
+<p>2010 • Фантастика, Триллер • 148 мин</p>
+<p>Вор проникает в сны для кражи секретов.</p>
+<button class="buyTicket" data-movie="Inception">Купить билет</button>
+</div>
+</div>
+<div class="movie-item">
+<img src="https://avatars.mds.yandex.net/i?id=07d421f18b5e88f029bc5b2492965694_l-4080866-images-thumbs&n=13" alt="Interstellar">
+<div class="movie-info">
+<h3 class="movie-title" data-genre="drama">Interstellar</h3>
+<p>2014 • Фантастика, Драма • 169 мин</p>
+<p>Путешествие сквозь космос для спасения человечества.</p>
+<button class="buyTicket" data-movie="Interstellar">Купить билет</button>
+</div>
+</div>
+<div class="movie-item">
+<img src="https://i.pinimg.com/736x/91/1a/2d/911a2db55ff3a1faa44a7e766b9a1b3e.jpg" alt="Avatar 2">
+<div class="movie-info">
+<h3 class="movie-title" data-genre="sci-fi">Avatar 2</h3>
+<p>2022 • Фантастика, Приключения • 192 мин</p>
+<p>Продолжение истории о людях на планете Пандора.</p>
+<button class="buyTicket" data-movie="Avatar 2">Купить билет</button>
+</div>
+</div>
+<div class="movie-item">
+<img src="img/Daryn.jpeg" alt="Velikaya">
+<div class="movie-info">
+<h3 class="movie-title" data-genre="drama">Velikaya</h3>
+<p>2022 • Драма, Триллер • 176 мин</p>
+<p>Бэтмен против Загадочника в мрачном Готэме.</p>
+<button class="buyTicket" data-movie="Velikaya">Купить билет</button>
+</div>
+</div>
+<div class="movie-item">
+<img src="img/Maksim.jpeg" alt="Titanic">
+<div class="movie-info">
+<h3 class="movie-title" data-genre="action">Titanic</h3>
+<p>1997 • Драма, Романтика • 194 мин</p>
+<p>История любви между Джеком и Розой на корабле Титаник.</p>
+<button class="buyTicket" data-movie="Titanic">Купить билет</button>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-content">
+<div class="contact-info">
+<p>Телефон: +7 (708) 219-78-90</p>
+<p>Адрес: г. Кокшетау, ул. Гагарина 19</p>
+</div>
+<p>© 2026 CinemaTime</p>
+<div class="social-links">
+<a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a>
+<a href="https://twitter.com/" target="_blank">Twitter</a>
+<a href="https://instagram.com/" target="_blank">Instagram</a>
+</div>
+</div>
+</footer>
+
+<script src="java/nav.js"></script>
+<script src="java/movies.js"></script>
+</body>
+</html>

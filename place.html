@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/logoB.png" type="image/png">
+<title>CinemaTime — Выбор мест</title>
+</head>
+
+<body>
+
+<div class="background-overlay"></div>
+
+<header>
+<nav class="menu">
+<h2 class="logo">CinemaTime</h2>
+<div class="burger" id="burger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div id="navLinks">
+<a href="Web.html">Главная</a>
+<a href="movies.html">Фильмы</a>
+<a href="payment-history.html">История платежей</a>
+<a href="contact.html">Контакты</a>
+<a href="about.html">О нас</a>
+</div>
+</nav>
+</header>
+
+<div class="hero" style="padding: 100px 20px 40px;">
+<h1 id="movie-title">Выбор мест</h1>
+<p>Выберите удобные места для фильма</p>
+<div class="time-selector">
+<label for="session-time">Выберите время сеанса:</label>
+<select id="session-time">
+<option value="10:00">10:00</option>
+<option value="14:00">14:00</option>
+<option value="18:00">18:00</option>
+<option value="22:00">22:00</option>
+</select>
+</div>
+</div>
+
+<section class="seats-section">
+<div class="screen">Экран</div>
+<div class="seats-grid">
+<div class="row">
+<span class="row-label">Ряд 1</span>
+<button class="seat" data-seat="1-1">1</button>
+<button class="seat" data-seat="1-2">2</button>
+<button class="seat" data-seat="1-3">3</button>
+<button class="seat" data-seat="1-4">4</button>
+<button class="seat" data-seat="1-5">5</button>
+<button class="seat" data-seat="1-6">6</button>
+<button class="seat" data-seat="1-7">7</button>
+<button class="seat" data-seat="1-8">8</button>
+</div>
+<div class="row">
+<span class="row-label">Ряд 2</span>
+<button class="seat" data-seat="2-1">1</button>
+<button class="seat" data-seat="2-2">2</button>
+<button class="seat" data-seat="2-3">3</button>
+<button class="seat" data-seat="2-4">4</button>
+<button class="seat" data-seat="2-5">5</button>
+<button class="seat" data-seat="2-6">6</button>
+<button class="seat" data-seat="2-7">7</button>
+<button class="seat" data-seat="2-8">8</button>
+</div>
+<div class="row">
+<span class="row-label">Ряд 3</span>
+<button class="seat" data-seat="3-1">1</button>
+<button class="seat" data-seat="3-2">2</button>
+<button class="seat" data-seat="3-3">3</button>
+<button class="seat" data-seat="3-4">4</button>
+<button class="seat" data-seat="3-5">5</button>
+<button class="seat" data-seat="3-6">6</button>
+<button class="seat" data-seat="3-7">7</button>
+<button class="seat" data-seat="3-8">8</button>
+</div>
+<div class="row">
+<span class="row-label">Ряд 4</span>
+<button class="seat" data-seat="4-1">1</button>
+<button class="seat" data-seat="4-2">2</button>
+<button class="seat" data-seat="4-3">3</button>
+<button class="seat" data-seat="4-4">4</button>
+<button class="seat" data-seat="4-5">5</button>
+<button class="seat" data-seat="4-6">6</button>
+<button class="seat" data-seat="4-7">7</button>
+<button class="seat" data-seat="4-8">8</button>
+</div>
+<div class="row">
+<span class="row-label">Ряд 5</span>
+<button class="seat" data-seat="5-1">1</button>
+<button class="seat" data-seat="5-2">2</button>
+<button class="seat" data-seat="5-3">3</button>
+<button class="seat" data-seat="5-4">4</button>
+<button class="seat" data-seat="5-5">5</button>
+<button class="seat" data-seat="5-6">6</button>
+<button class="seat" data-seat="5-7">7</button>
+<button class="seat" data-seat="5-8">8</button>
+</div>
+</div>
+<div class="selected-seats">
+<h3>Выбранные места:</h3>
+<ul id="selected-list"></ul>
+<button id="confirm-btn" class="main-btn">Подтвердить выбор</button>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-content">
+<div class="contact-info">
+<p>Телефон: +7 (708) 219-78-90</p>
+<p>Адрес: г. Кокшетау, ул. Гагарина 19</p>
+</div>
+<p>© 2026 CinemaTime</p>
+<div class="social-links">
+<a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a>
+<a href="https://twitter.com/" target="_blank">Twitter</a>
+<a href="https://instagram.com/" target="_blank">Instagram</a>
+</div>
+</footer>
+
+<script src="java/nav.js"></script>
+<script src="java/place.js"></script>
+</body>
+</html>
